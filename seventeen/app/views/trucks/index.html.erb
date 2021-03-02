@@ -1,0 +1,11 @@
+<h1>Truck</h1>
+
+<ol>
+    <% @trucks.each do |truck| %>
+        <li>
+            <a href="/trucks/<%= truck.id %>">
+                <%= truck.model %>
+            </a>
+        </li>
+    <% end %>
+</ol>
